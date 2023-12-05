@@ -1,0 +1,23 @@
+nav {
+  position: fixed;
+  height: 120px;
+  width: 100%;
+  background-color: #4056A1;
+  color: #FFFFFF;
+  padding: 1.5em;
+}
+
+nav span {
+  font-family: 'Bungee', sans-serfif;
+}
+
+.new-tweet {
+  text-align: right;
+  margin: 10px 20px 0 20px;
+}
+
+
+.new-tweet i {
+  margin-left: 5px;
+  display: block;
+}
