@@ -1,28 +1,55 @@
-#tweet-text {
+#new-tweet {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  border-bottom: solid;
   padding: 20px;
   margin: 20px;
   width: 500px;
+  border-bottom: solid;
 }
 
-/* Container styles */
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50vh;
+#tweet-text {
+  width: 90%;
+  height: 120px;
+  margin: 1em auto;
 }
+
 
 /* Button styles */
 .container button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 10px 20px;
+  font-family: 'Bungee', sans-serfif;
   font-size: 16px;
-  background-color: #4c7b9a;
+  background-color: #4056A1;
   color: #fff;
-  border: none;
-  cursor: pointer;
 }
+
+.container output {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  margin-top: -30px;
+} 
+
+/* nav {
+
+
+nav span {
+  font-family: 'Bungee', sans-serfif;
+}
+
+.navbar-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.navbar-menu i {
+  color: red;
+  margin-top: -20px;
+} */

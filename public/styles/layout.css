@@ -28,12 +28,9 @@ body {
   font-family: 'Source Sans Pro', sans-serifl
  }
 
- .logo {
-  font-family: 'Bungee', sans-serif;
- }
-
  .container {
     width: 90%;
-    align-items: center;
+    margin: 1em auto;
+    /* align-items: center; */
     background-color: #f4f1ec;
   }
