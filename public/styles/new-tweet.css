@@ -1,0 +1,28 @@
+#tweet-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  border-bottom: solid;
+  padding: 20px;
+  margin: 20px;
+  width: 500px;
+}
+
+/* Container styles */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+/* Button styles */
+.container button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4c7b9a;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
