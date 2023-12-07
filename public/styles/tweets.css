@@ -37,3 +37,18 @@
   width: 100%;
 }
 
+.tweet:hover {
+  box-shadow: 0 0 10px rgb(7, 58, 100);
+}
+
+.tweet .fa-flag:hover {
+  color: rgb(14, 97, 165);
+}
+.tweet .fa-retweet:hover {
+  color: rgb(14, 97, 165);
+}
+.tweet .fa-heart:hover {
+  color: rgb(14, 97, 165);
+}
+
+
