@@ -5,7 +5,7 @@
 * The name should be centered below the avatar
 * The background-color should be a different colour than the nav and the body */
 
-header {
+.page-header {
   display: flex;
   height: 400px;
   width: 100%;
@@ -18,7 +18,7 @@ header {
   z-index: 0;
 }
 
-.img {
+img {
   justify-content: center;
   align-items: center;
 }
