@@ -53,6 +53,8 @@ $(document).ready(function() {
   $('#tweet-form').submit(function(event) {
     event.preventDefault();
 
+    const errors = $('#error');
+
     const checkTweet = $(this).find('textarea[name="text"]').val();
     if (checkTweet === '' || checkTweet.length === 0) {
       $('#error').text('The conents of the tweet are empty.').slideDown();
@@ -62,6 +64,8 @@ $(document).ready(function() {
       $('#error').text('You have exceeded the meximum limit of 140 characters.').slideDown();
       return;
     }
+
+    errors.slideUp();
 
     // AJAX POST request
     $.ajax({
