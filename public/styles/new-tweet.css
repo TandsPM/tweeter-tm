@@ -23,8 +23,6 @@
   color: red;
 }
 
-
-/* Button styles */
 .container button {
   display: flex;
   justify-content: space-between;
@@ -43,3 +41,62 @@
   margin-top: -30px;
 } 
 
+/* media for devices */
+
+/* Mobile */
+@media only screen and (max-width: 787px) {
+  #new-tweet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    margin: 10px auto;
+    width: 100%;
+  }
+
+  #tweet-text {
+    width: 100%;
+    height: auto;
+    margin: 1em 0;
+  }
+
+  .container button {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .container output {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+  /* Tablet */
+ @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    #new-tweet {
+      width: 50%;
+      line-height: normal;
+    }
+
+/* Web/Desktop */
+@media only screen and (min-width: 1024px) {
+  #new-tweet {
+    flex-direction: row;
+    width: 500px;
+  }
+
+  #tweet-text {
+    width: 90%;
+  }
+
+  .container button {
+    width: auto;
+    margin: 0 10px;
+  }
+
+  .container output {
+    width: auto;
+  }
+}
+}

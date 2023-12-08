@@ -1,8 +1,3 @@
-/*
- * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
- * https://css-tricks.com/international-box-sizing-awareness-day/
- * Do not modify these two selectors, please
- */
 html {
   box-sizing: border-box;
 }
@@ -18,15 +13,8 @@ body {
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
-}
-
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */
- 
- body {
   font-family: 'Source Sans Pro', sans-serifl
- }
+}
 
  .container {
     width: 90%;

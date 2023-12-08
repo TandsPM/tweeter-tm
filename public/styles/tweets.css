@@ -7,7 +7,6 @@
   box-sizing: border-box;
 }
 
-
 .tweet-header {
   display: flex;
   justify-content: space-between;
@@ -44,9 +43,11 @@
 .tweet .fa-flag:hover {
   color: rgb(14, 97, 165);
 }
+
 .tweet .fa-retweet:hover {
   color: rgb(14, 97, 165);
 }
+
 .tweet .fa-heart:hover {
   color: rgb(14, 97, 165);
 }
@@ -56,3 +57,17 @@
   color: red;
   margin-top: 10px;
 }
+
+/* Mobile */
+@media only screen and (max-width: 787px) {
+  #tweets-container {
+    width: 100%;
+  }
+}
+
+  /* Tablet */
+ @media only screen and (min-width: 768px) and (max-width: 1024px) {
+  #tweets-container {
+    width: 100%;
+  }
+ }
