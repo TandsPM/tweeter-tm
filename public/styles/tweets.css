@@ -49,15 +49,15 @@
 }
 
 .tweet .fa-flag:hover {
-  color: rgb(14, 97, 165);
+  color: rgb(160, 115, 42);
 }
 
 .tweet .fa-retweet:hover {
-  color: rgb(14, 97, 165);
+  color: rgb(160, 115, 42);
 }
 
 .tweet .fa-heart:hover {
-  color: rgb(14, 97, 165);
+  color: rgb(160, 115, 42);
 }
 
 .error {
