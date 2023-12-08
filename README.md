@@ -5,7 +5,7 @@ Tweeter is a simple, single-page Twitter clone built with HTML, CSS, JS, jQuery 
 ## Final Project
 
 !["Screenshot of the tweet box"]()
-!["Screenshot of a tweet and a tweet in progress"]()
+!["Screenshot of a tweet and a tweet in progress"](https://github.com/TandsPM/tweeter-tm/blob/master/docs/new-tweet.png?raw=true)
 
 ## Dependencies
 
