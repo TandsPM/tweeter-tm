@@ -11,21 +11,31 @@
 
 $(document).ready(function() {
 
+  const escape = function (str) {
+    let div = document.createElement("div");
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  };
+
   const createTweetElement = function(tweet) {
     // add timeago
     const timeAgo = timeago.format(tweet.created_at);
+
+    const userName = `<p>${escape(tweet.user.name)}</p>`;
+    const userHandle = `<p>${escape(tweet.user.handle)}</p>`;
+    const tweetText = `<p>${escape(tweet.content.text)}</p>`;
 
     const $tweet = $(`<article class="tweet">
   <header class="tweet-header">
     <div class="user-info">
       <i class="fa-regular fa-face-smile"></i>
-      <h3>${tweet.user.name}</h3>
+      <h3>${userName}</h3>
     </div>
-    <p class="username">${tweet.user.handle}</p>
+    <p class="username">${userHandle}</p>
   </header>
   
   <div class="tweet-content">
-    <p>${tweet.content.text}</p>
+    <p>${tweetText}</p>
   </div>
 
   <footer class="tweet-footer">
