@@ -48,7 +48,7 @@ $(document).ready(function() {
       // calls createTweetElement for each tweet
       const $tweet = createTweetElement(tweet);
       // takes return value and appends it to the tweets container
-      $('#tweets-container').append($tweet);
+      $('#tweets-container').prepend($tweet);
     }
   };
 
@@ -56,7 +56,7 @@ $(document).ready(function() {
   $('#tweet-form').submit(function(event) {
     // prevent the default behaviour of the submit event (data submission and page refresh)
     event.preventDefault();
-    
+
     // validate content
     const checkTweet = $(this).find('textarea[name="text"]').val();
     if (checkTweet === '' || checkTweet.length === 0) {
@@ -70,12 +70,23 @@ $(document).ready(function() {
 
     // create an AJAX POST request in client.js that sends the form data to the server.
     $.ajax({
-      method: "POST",
+      method: 'POST',
       url: '/tweets',
       data: $(this).serialize(),
       success: function(response) {
         console.log('Successful:', response);
+
+        // have new tweet post to the top instead of bottom
+        // const $newestTweet = createTweetElement(response);
+        // $('#tweets-container').prepend($newestTweet);
+        // // clear after successful tweet
+        $('#tweet-form textarea').val('');
+
         loadTweets();
+      },
+      // throw error if any issues
+      error: function(err) {
+        console.log('There was an error posting your tweet:', err);
       }
     });
   });
@@ -91,9 +102,9 @@ $(document).ready(function() {
         renderTweets(response);
       },
       error: function(err) {
-        console.log('There was an error fetching your tweet:', err)
+        console.log('There was an error fetching your tweet:', err);
       }
-    })
+    });
   };
 
   loadTweets();
