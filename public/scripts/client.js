@@ -56,7 +56,17 @@ $(document).ready(function() {
   $('#tweet-form').submit(function(event) {
     // prevent the default behaviour of the submit event (data submission and page refresh)
     event.preventDefault();
-    console.log("Form submitted")
+    
+    // validate content
+    const checkTweet = $(this).find('textarea[name="text"]').val();
+    if (checkTweet === '' || checkTweet.length === 0) {
+      alert('The conents of the tweet are empty.');
+      return;
+    }
+    if (checkTweet.length > 140) {
+      alert('You have exceeded the meximum limit of 140 characters.');
+      return;
+    }
 
     // create an AJAX POST request in client.js that sends the form data to the server.
     $.ajax({
