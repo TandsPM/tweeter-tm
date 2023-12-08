@@ -3,6 +3,7 @@
   flex-direction: column;
   padding: 10px;
   margin: 1em;
+  margin-top: 50px;
   border: 2px solid #4e4a4a;
   box-sizing: border-box;
 }
@@ -13,11 +14,14 @@
   align-items: center;
   width: 100%;
   margin-bottom: 10px;
+  padding-right: 20px;
 }
 
 .user-info {
   display: flex;
   align-items: center;
+  padding-left: 20px;
+  margin: -10px;
   gap: 15px;
 }
 
@@ -37,6 +41,7 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  padding: 20px;
 }
 
 .tweet:hover {
