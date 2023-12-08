@@ -13,7 +13,7 @@ $(document).ready(function() {
 
   const createTweetElement = function(tweet) {
     // add timeago
-    const timeAgoStr = timeago.format(tweet.created_at);
+    const timeAgo = timeago.format(tweet.created_at);
 
     const $tweet = $(`<article class="tweet">
   <header class="tweet-header">
@@ -29,7 +29,7 @@ $(document).ready(function() {
   </div>
 
   <footer class="tweet-footer">
-    <p>${timeAgoStr}</p>
+    <p>${timeAgo}</p>
     <p>
       <i class="fa-solid fa-flag"></i>
       <i class="fa-solid fa-retweet"></i>
@@ -52,41 +52,21 @@ $(document).ready(function() {
     }
   };
 
-//   .done(function( msg ) {
-//     alert( "Data Saved: " + msg );
-//   });
-// $(form).serialize()
-// .then(loadTweets)
-// success function(
-// loadTweets
-
-
-  // $.ajax({
-//   method: "POST",
-//   url: "some.php",
-//   data: { name: "John", location: "Boston" }
-// })
-//   .done(function( msg ) {
-//     alert( "Data Saved: " + msg );
-//   });
-// $(form).serialize()
-// .then(loadTweets)
-// success function(
-// loadTweets
-
-
   // add an event listener that listens for the submit event
-  $('#tweets-form').submit(function(event) {
+  $('#tweet-form').submit(function(event) {
     // prevent the default behaviour of the submit event (data submission and page refresh)
     event.preventDefault();
+    console.log("Form submitted")
+
     // create an AJAX POST request in client.js that sends the form data to the server.
-  
     $.ajax({
       method: "POST",
       url: '/tweets',
-      data: $(this).serialize()
-    }).then(function () {
-      loadTweets();
+      data: $(this).serialize(),
+      success: function(response) {
+        console.log('Successful:', response);
+        loadTweets();
+      }
     });
   });
 
@@ -109,18 +89,3 @@ $(document).ready(function() {
   loadTweets();
 });
 
-
-
-
-// $.ajax({
-//   method: "POST",
-//   url: "some.php",
-//   data: { name: "John", location: "Boston" }
-// })
-//   .done(function( msg ) {
-//     alert( "Data Saved: " + msg );
-//   });
-// $(form).serialize()
-// .then(loadTweets)
-// success function(
-// loadTweets
