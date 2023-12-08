@@ -34,6 +34,7 @@
   <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
     crossorigin="anonymous"></script>
   <script type="text/javascript" src="scripts/composer-char-counter.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js" integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 </head>
 
@@ -65,7 +66,7 @@
   <main class="container">
     <section class="new-tweet">
       <h2>Compose Tweet</h2>
-      <form method="POST" action="/tweets">
+      <form id="tweet-form" method="POST" action="/tweets">
         <label for="tweet-text">What are you humming about?</label>
         <textarea name="text" id="tweet-text"></textarea>
         <div>
@@ -75,33 +76,9 @@
       </form>
     </section>
 
-    <article class="tweet">
-      <header class="tweet-header">
-        <div class="user-info">
-          <i class="fa-regular fa-face-smile"></i>
-          <h3>User Name</h3>
-        </div>
-        <p class="username">@username</p>
-      </header>
-      
-      <div class="tweet-content">
-        <p>This is a test tweet</p>
-      </div>
+    <section id="tweets-container"></section>
 
-      <footer class="tweet-footer">
-        <p>10 days ago</p>
-        <p>
-          <i class="fa-solid fa-flag"></i>
-          <i class="fa-solid fa-retweet"></i>
-          <i class="fa-solid fa-heart"></i>
-        </p>
-      </footer>
-    </article>
   </main>
-  <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-  </h3>
 </body>
 
 </html>
