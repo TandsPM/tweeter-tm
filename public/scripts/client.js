@@ -70,11 +70,11 @@ $(document).ready(function() {
     // validate content
     const checkTweet = $(this).find('textarea[name="text"]').val();
     if (checkTweet === '' || checkTweet.length === 0) {
-      alert('The conents of the tweet are empty.');
+      $('#error').text('The conents of the tweet are empty.').slideDown();
       return;
     }
     if (checkTweet.length > 140) {
-      alert('You have exceeded the meximum limit of 140 characters.');
+      $('#error').text('You have exceeded the meximum limit of 140 characters.').slideDown();
       return;
     }
 

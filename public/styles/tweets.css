@@ -51,4 +51,8 @@
   color: rgb(14, 97, 165);
 }
 
-
+.error {
+  display: none;
+  color: red;
+  margin-top: 10px;
+}
