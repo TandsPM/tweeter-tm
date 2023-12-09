@@ -18,6 +18,9 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+3:ital,wght@0,300;0,600;1,300;1,600&display=swap"
     rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,300;0,600;1,300;1,600&display=swap" rel="stylesheet">
 
   <!-- App CSS -->
   <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
@@ -52,13 +55,18 @@
   <!-- Header -->
   <header>
     <section class="page-header">
-      <div>
-        <img src="/images/profile-hex.png">
+    <div class="profile-info">
+      <div class="avatar">
+        <img src="/images/profile-hex.png" />
       </div>
-      <br>
-      <div>
-        <h2>Tandra Malm</h2>
+      <!-- <br> -->
+      <div class="user-name">
+        <h2>
+          <span id="first-name">Tan</span>
+          <span id="last-name">Malm</span>
+        </h2>
       </div>
+    </div>
     </section>
   </header>
 
@@ -76,7 +84,7 @@
       </form>
       <div id="error" class="error"></div>
     </section>
-
+    <!-- <div class="user-profile">***<img src="${tweet.user.avatars}" alt="Profile Picture"> -->
     <section id="tweets-container"></section>
 
   </main>

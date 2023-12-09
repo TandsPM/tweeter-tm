@@ -1,12 +1,12 @@
 #new-tweet {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 20px;
+  /* align-items: center; */
+  justify-content: center;
+  /* padding: 20px;
   margin: 20px;
-  width: 500px;
-  border-bottom: solid;
+  width: 500px; */
+  /* border-bottom: solid; */
 }
 
 #tweet-text {
@@ -14,6 +14,12 @@
   height: 120px;
   margin: 1em auto;
   resize: none;
+}
+
+textarea {
+  border-style: hidden;
+  border-bottom: 2px solid #737576;
+  background-color: #FFFFFF; /* change to background color*/
 }
 
 .counter {

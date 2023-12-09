@@ -1,6 +1,7 @@
 .page-header {
   display: flex;
-  height: 600px;
+  flex-direction: column;
+  height: 550px;
   width: 100%;
   background-color: #737576;
   justify-content: center;
@@ -8,12 +9,29 @@
   background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
   flex-direction: column;
   color: rgb(201, 147, 13);
-  z-index: 0;
+  padding-top: 115px;
+  margin: 0 2%;
+}
+
+.user-name {
+  display: flex;
+  justify-content: center;
+}
+
+#first-name {
+  font-weight: 600;
+}
+
+#last-name {
+  font-weight: 300;
 }
 
 img {
   display: flex;
   justify-content: center;
-  align-items: center;
+  margin-left: 20 px;
+  margin-right: 10px;
+  max-width: 200px;
+  max-height: 200px;
   margin-top: 200px;
 }

@@ -14,19 +14,20 @@
   align-items: center;
   width: 100%;
   margin-bottom: 10px;
-  padding-right: 20px;
+  padding-right: 10px;
 }
 
 .user-info {
   display: flex;
   align-items: center;
   padding-left: 20px;
-  margin: -10px;
-  gap: 15px;
-}
+  /* margin: -10px; */
+  gap: 20px;
+} 
 
 .username {
-  margin-left: auto;
+  margin-left: 10px;
+  /* align-self: baseline; */
 }
 
 .tweet-content {

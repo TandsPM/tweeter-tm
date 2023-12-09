@@ -15,9 +15,9 @@ $(document).ready(function() {
     const tweetText = `<p>${escape(tweet.content.text)}</p>`;
 
     const $tweet = $(`<article class="tweet">
-  <header class="tweet-header">
+    <header class="tweet-header">
     <div class="user-info">
-      <i class="fa-regular fa-face-smile"></i>
+    <img src="${tweet.user.avatars}" alt="Profile Picture">
       <h3>${userName}</h3>
     </div>
     <p class="username">${userHandle}</p>
