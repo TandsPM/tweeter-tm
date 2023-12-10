@@ -15,11 +15,13 @@ body {
   font-size: 24px;
   font-family: 'Source Sans 3', sans-serif;
   margin: 0;
+  padding: 0;
 }
 
 .layout-style {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
 }
 
 nav {
@@ -31,7 +33,7 @@ nav {
   align-items: center;
   align-items: center;
   position: fixed;
-  witdth: 100%;
+  width: 100%;
   top: 0;
   z-index: 1000;
 }
@@ -55,23 +57,26 @@ nav {
   display: flex;
   flex: 1;
   margin-top: 120px;
+  width: 100%;
 }
 
  .container {
   flex: 2;
   padding: 1em;
   background-color: #f4f1ec;
-  width: 70%;
+  width: 100%;
+  box-sizing: border-box;
   } 
 
   @media only screen and (max-width: 767px) {
     .layout-wrapping {
       margin: 0;
       padding-top: 115px;
+      position: relative;
     }
 
     .container {
-      width: 100%;
+      /* width: 100%; */
       padding: 1em;
     }
 
@@ -95,6 +100,7 @@ nav {
     }
 
     .container {
-      width: 100%;
+      max-width: 960px;
+      margin: 0 auto;
     }
   } 
