@@ -60,47 +60,46 @@ nav {
   width: 100%;
 }
 
- .container {
+.container {
   flex: 2;
   padding: 1em;
   background-color: #f4f1ec;
   width: 100%;
   box-sizing: border-box;
-  } 
+} 
 
-  @media only screen and (max-width: 767px) {
-    .layout-wrapping {
-      margin: 0;
-      padding-top: 115px;
-      position: relative;
-    }
-
-    .container {
-      /* width: 100%; */
-      padding: 1em;
-    }
-
-    .page-header {
-      display: flex;
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background-color: #737576;
-      justify-content: center;
-      align-items: center;
-      padding-top: 0;
-      z-index: 900;
-    }
+@media only screen and (max-width: 767px) {
+  .layout-wrapping {
+     margin: 0;
+    padding-top: 115px;
+    position: relative;
   }
 
+  .container {
+    padding: 1em;
+  }
 
-  @media only screen and (min-width: 1024px) {
-    .layout-wrapping {
-      margin-top: 0;
-    }
+  .page-header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #737576;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0;
+    z-index: 900;
+  }
+}
 
-    .container {
-      max-width: 960px;
-      margin: 0 auto;
-    }
-  } 
+
+@media only screen and (min-width: 1024px) {
+  .layout-wrapping {
+     margin-top: 0;
+  }
+
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+} 

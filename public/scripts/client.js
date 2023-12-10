@@ -58,10 +58,16 @@ $(document).ready(function() {
     const checkTweet = $(this).find('textarea[name="text"]').val();
     if (checkTweet === '' || checkTweet.length === 0) {
       $('#error').text('The conents of the tweet are empty.').slideDown();
+      setTimeout(function() {
+        errors.slideUp();
+      }, 3000);
       return;
     }
     if (checkTweet.length > 140) {
       $('#error').text('You have exceeded the meximum limit of 140 characters.').slideDown();
+      setTimeout(function() {
+        errors.slideUp();
+      }, 3000);
       return;
     }
 

@@ -37,6 +37,7 @@ img {
   margin-top: 50px;
 }
 
+/* web */
 @media only screen and (min-width: 1024px) {
   .page-header {
     width: 100%;
