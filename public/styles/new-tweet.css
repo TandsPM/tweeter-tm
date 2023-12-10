@@ -7,12 +7,12 @@
 
 #tweet-text {
   width: 90%;
-  height: 120px;
-  margin: 1em auto;
+  height: 80px;
+  margin: 5px auto;
   resize: none;
   border-style: hidden;
   border-bottom: 2px solid #737576;
-  background-color: #FFFFFF;
+  background-color: transparent;
 }
 
 .counter {

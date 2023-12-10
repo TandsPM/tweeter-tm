@@ -9,8 +9,8 @@
   background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
   flex-direction: column;
   color: rgb(201, 147, 13);
-  padding-top: 20px;
-  margin: 0 2%;
+  padding: 20px;
+  margin: 0 20%;
 }
 
 .user-name {
