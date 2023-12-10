@@ -1,12 +1,8 @@
 #new-tweet {
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
-  justify-content: center;
-  /* padding: 20px;
-  margin: 20px;
-  width: 500px; */
-  /* border-bottom: solid; */
+  align-items: center;
+  justify-content: flex-start;
 }
 
 #tweet-text {
@@ -14,12 +10,9 @@
   height: 120px;
   margin: 1em auto;
   resize: none;
-}
-
-textarea {
   border-style: hidden;
   border-bottom: 2px solid #737576;
-  background-color: #FFFFFF; /* change to background color*/
+  background-color: #FFFFFF;
 }
 
 .counter {
@@ -35,7 +28,7 @@ textarea {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  font-family: 'Bungee', sans-serfif;
+  font-family: 'Bungee', sans-serif;
   font-size: 16px;
   background-color: #4056A1;
   color: #fff;
@@ -51,8 +44,28 @@ textarea {
 /* media for devices */
 
 /* Mobile */
-@media only screen and (max-width: 787px){
+@media only screen and (min-width: 320px) and (max-width: 425px) {
+  .layout-wrapping {
+    flex-direction: column; 
+    align-items: center;    
+  }
 
+  .page-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #555657;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0;
+    z-index: 900;
+  }
+
+  .container {
+    width: 100%;
+    padding: 1em;
+    margin-top: 200px; 
+  }
 }
 
   /* Tablet */
