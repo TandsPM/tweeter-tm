@@ -84,6 +84,7 @@ $(document).ready(function() {
         // clear after successful tweet
         $('#tweet-form textarea').val('');
 
+        // clear counter after successful tweet
         $('#counter').text('140');
 
         loadTweets();
